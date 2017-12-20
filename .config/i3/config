@@ -245,6 +245,8 @@ bindsym Mod1+Tab workspace next
 bindsym Mod1+Shift+Tab workspace prev
 bindsym $mod+Tab workspace back_and_forth
 
+#
+
 # for specifc windows
 for_window [title="ncmpcpp"] floating enable
 for_window [title="neofetch"] floating enable

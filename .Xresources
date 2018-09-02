@@ -1,14 +1,36 @@
-
 ! Font prefferenes
 URxvt.font: xft:FantasqueSansMono:pixelsize=12
 !urxvt.boldFont: xft:FantasqueSansMono:pixelsize=12:weight=bold
 urxvt.letterSpace: -1
+
+! Icone do terminal
+Urxvt.iconFile: /usr/share/icons/Adwaita/32x32/apps/utilities-terminal-symbolic.symbolic.png
 
 ! Larger history limit
 urxvt.saveLines: 1000000
 
 ! ScrollBar
 URxvt.scrollBar: false
+URxvt.secondaryScroll: true
+
+! Tamanho da Janela(window)
+URxvt.geometry: 100x30
+
+! Copia e cola
+!URxvt.keysym.Shift-Control-V: eval:paste_clipboard
+!URxvt.keysym.Shift-Control-C: eval:selection_to_clipboard
+
+! Atalhos
+URxvt.perl-ext-common:keyboard-select
+URxvt.keysym.M-Escape: perl:keyboard-select:activate
+
+URxvt.keysym.M-s: perl:keyboard-select:search
+
+! abas
+!URxvt.perl-ext-common: ...,tabbed,...
+URxvt.tabbed.new-button: yes
+URxvt.tabbed.title: no
+URxvt.autohide: no
 
 ! Dracula Xresources palette
 *.foreground: #F8F8F2
@@ -29,4 +51,15 @@ URxvt.scrollBar: false
 *.color14:    #9AEDFE
 *.color7:     #BFBFBF
 *.color15:    #E6E6E6
+
+
+! ------------------------------------------------------------------------------
+! ROFI Color theme
+! ------------------------------------------------------------------------------
+rofi.color-enabled: true
+rofi.color-window: #040102, #8A2B37, #3A2431
+rofi.color-normal: #040102, #8A2B37, #040102, #9575cd, #040102
+rofi.color-active: #040102, #8A2B37, #040102, #9575cd, #040102
+rofi.color-urgent: #E53935, #8A2B37, #040102, #9575cd, #040102
+
 
